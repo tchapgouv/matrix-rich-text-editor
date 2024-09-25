@@ -12,7 +12,7 @@ struct Release: AsyncParsableCommand {
     
     var apiToken = ProcessInfo.processInfo.environment["SWIFT_RELEASE_TOKEN"]!
     
-    var sourceRepo = Repository(owner: "matrix-org", name: "matrix-rich-text-editor")
+    var sourceRepo = Repository(owner: "element-hq", name: "matrix-rich-text-editor")
     var packageRepo = Repository(owner: "matrix-org", name: "matrix-rich-text-editor-swift")
     
     var buildDirectory = URL(filePath: #file)

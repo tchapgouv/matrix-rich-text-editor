@@ -1,6 +1,6 @@
 # Matrix Rich Text Editor
-[![codecov](https://codecov.io/gh/matrix-org/matrix-rich-text-editor/branch/main/graph/badge.svg?token=UFBR3KtPdg)](https://codecov.io/gh/matrix-org/matrix-rich-text-editor)
-![GitHub](https://img.shields.io/github/license/matrix-org/matrix-rich-text-editor)
+[![codecov](https://codecov.io/gh/element-hq/matrix-rich-text-editor/branch/main/graph/badge.svg?token=UFBR3KtPdg)](https://codecov.io/gh/matrix-org/matrix-rich-text-editor)
+![GitHub](https://img.shields.io/github/license/element-hq/matrix-rich-text-editor)
 
 A cross-platform rich text editor intended for use in Matrix clients including
 the Element clients.
@@ -10,12 +10,12 @@ and platform-specific wrappers.
 
 __Important note:__ This project is still in an early stage. Minor versions could bring 
 breaking API changes, see [CHANGELOG.md](CHANGELOG.md) for details.
-Bugs and crashes may occur, please report them [here](https://github.com/matrix-org/matrix-rich-text-editor/issues/new).
+Bugs and crashes may occur, please report them [here](https://github.com/element-hq/matrix-rich-text-editor/issues/new).
 
 ## Live demo
 
 Try it out at
-[matrix-org.github.io/matrix-rich-text-editor](https://matrix-org.github.io/matrix-rich-text-editor/).
+[element-hq.github.io/matrix-rich-text-editor](https://element-hq.github.io/matrix-rich-text-editor/).
 
 ## Building the code
 
