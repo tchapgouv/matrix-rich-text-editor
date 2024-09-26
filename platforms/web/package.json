@@ -6,7 +6,7 @@
     "author": "matrix.org",
     "repository": {
         "type": "git",
-        "url": "https://github.com/matrix-org/matrix-wysiwyg"
+        "url": "https://github.com/element-hq/matrix-rich-text-editor"
     },
     "license": "AGPL-3.0",
     "main": "./dist/matrix-wysiwyg.umd.cjs",
