@@ -1,9 +1,9 @@
 {
-    "name": "@matrix-org/matrix-wysiwyg",
-    "version": "2.37.10",
+    "name": "@vector-im/matrix-wysiwyg",
+    "version": "2.37.11",
     "type": "module",
-    "description": "Wysiwyg composer for matrix.org using React",
-    "author": "matrix.org",
+    "description": "Wysiwyg composer for Element Web using React",
+    "author": "New Vector Ltd.",
     "repository": {
         "type": "git",
         "url": "https://github.com/element-hq/matrix-rich-text-editor"

@@ -1,5 +1,13 @@
 # Changelog
 
+# [2.37.11] - 2024-10-01
+
+- [Common] matrix-rich-text-editor is being forked by Element at https://github.com/element-hq/matrix-rich-text-editor. Contributions are licensed to Element under a CLA and made available under an AGPLv3.0 license.
+  You can read more about this here:
+  - https://matrix.org/blog/2024/08/heart-of-matrix/
+  - https://element.io/blog/sustainable-licensing-at-element-with-agpl/
+- [Web] The matrix-wysiwyg npm package will now be published at https://www.npmjs.com/package/@vector-im/matrix-wysiwyg
+
 # [2.37.9] - 2024-08-28
 - [Rust] Escape text passed to `ComposerModel::set_link_with_text` and `insert_mention*` methods of the WASM bindings.
 
