@@ -1,5 +1,10 @@
 # Changelog
 
+# [2.37.12] - 2024-10-02
+
+- [Common] Dependencies update
+- [iOS] fixed a release bug that prevented the XCFramework to be downloaded from SwiftPM.
+
 # [2.37.11] - 2024-10-01
 
 - [Common] matrix-rich-text-editor is being forked by Element at https://github.com/element-hq/matrix-rich-text-editor. Contributions are licensed to Element under a CLA and made available under an AGPLv3.0 license.
