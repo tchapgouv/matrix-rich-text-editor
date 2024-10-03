@@ -23,7 +23,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.TextUnit
 import kotlin.math.roundToInt
 
-data class RichTextEditorStyle internal constructor(
+data class RichTextEditorStyle(
     val bulletList: BulletListStyle,
     val codeBlock: CodeBlockStyle,
     val inlineCode: InlineCodeStyle,
@@ -33,19 +33,19 @@ data class RichTextEditorStyle internal constructor(
     val link: LinkStyle,
 )
 
-data class BulletListStyle internal constructor(
+data class BulletListStyle(
     val bulletGapWidth: Dp,
     val bulletRadius: Dp,
 )
 
-data class CodeBlockStyle internal constructor(
+data class CodeBlockStyle(
     val leadingMargin: Dp,
     val verticalPadding: Dp,
     val relativeTextSize: Float,
     val background: CodeBackgroundStyle,
 )
 
-data class InlineCodeStyle internal constructor(
+data class InlineCodeStyle(
     val horizontalPadding: Dp,
     val verticalPadding: Dp,
     val relativeTextSize: Float,
