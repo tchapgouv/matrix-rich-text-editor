@@ -1,5 +1,8 @@
 # Changelog
 
+# [2.37.13] - 2024-10-04
+- [Android] Make `RichTextEditorStyle` and other data classes' constructors public to match their `copy` methods in Kotlin 2.0. This would cause build errors on Kotlin 2.1.
+
 # [2.37.12] - 2024-10-02
 
 - [Common] Dependencies update
