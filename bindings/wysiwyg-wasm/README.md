@@ -30,8 +30,9 @@ These files should be copied into a web project and imported with code like:
 
 ```html
 <script type="module">
-import init, { some_method_from_rust }
-    from './generated/matrix_sdk_wysiwyg.js';
+  TODO this is all wrong
+import { initAsync, some_method_from_rust }
+    from './pkg/matrix_sdk_wysiwyg.js';
 
 async function run() {
     await init();

@@ -33,6 +33,12 @@ export default defineConfig({
             },
         }),
     ],
+    server: {
+        fs: {
+            // Allow serving files from the git root to access the wasm in bindings dir
+            allow: ['../..'],
+        },
+    },
     test: {
         globals: true,
         environment: 'jsdom',
@@ -57,6 +63,7 @@ export default defineConfig({
         },
     },
     build: {
+        minify: false, // TODO remove
         lib: {
             entry: resolve(__dirname, 'lib/useWysiwyg.ts'),
             name: 'Matrix wysiwyg',
@@ -66,7 +73,7 @@ export default defineConfig({
         rollupOptions: {
             // make sure to externalize deps that shouldn't be bundled
             // into your library
-            external: ['react', 'react-dom'],
+            external: ['react', 'react-dom', '@vector-im/matrix-wysiwyg-wasm'],
             output: {
                 // Provide global variables to use in the UMD build
                 // for externalized deps
