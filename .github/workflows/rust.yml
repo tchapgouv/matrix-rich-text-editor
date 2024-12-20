@@ -23,7 +23,7 @@ jobs:
     - name: Install rust
       run: |
         rustup set profile minimal
-        rustup toolchain install
+        rustup show # installs from rust-toolchain.toml
     - name: Set Component 
       run: rustup component add rustfmt clippy
     - name: Format

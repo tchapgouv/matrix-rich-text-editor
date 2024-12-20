@@ -23,7 +23,7 @@ jobs:
     - name: Install rust
       run: |
         rustup set profile minimal
-        rustup toolchain install
+        rustup show # installs from rust-toolchain.toml
     - name: Install `wasm-pack`
       run: cargo install wasm-pack
     - name: Test the `wysiwyg` crate

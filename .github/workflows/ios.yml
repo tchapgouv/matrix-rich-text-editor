@@ -35,7 +35,7 @@ jobs:
     - name: Install rust
       run: |
         rustup set profile minimal
-        rustup toolchain install
+        rustup show # installs from rust-toolchain.toml
 
     - name: Install targets
       run: make targets-ios
