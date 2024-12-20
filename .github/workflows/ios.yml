@@ -32,12 +32,10 @@ jobs:
       with:
         cache-on-failure: true
 
-    - name: Install Rust
-      uses: actions-rs/toolchain@v1
-      with:
-        toolchain: 1.76
-        profile: minimal
-        override: true
+    - name: Install rust
+      run: |
+        rustup set profile minimal
+        rustup toolchain install
 
     - name: Install targets
       run: make targets-ios
