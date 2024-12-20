@@ -80,12 +80,10 @@ where
         start_location: usize,
         custom_suggestion_patterns: &HashSet<String>,
     ) -> Option<(PatternKey, String)> {
-        let Some(key) = PatternKey::from_string_and_suggestions(
+        let key = PatternKey::from_string_and_suggestions(
             text.to_string(),
             custom_suggestion_patterns,
-        ) else {
-            return None;
-        };
+        )?;
 
         if key.is_static_pattern() {
             text.pop_first();

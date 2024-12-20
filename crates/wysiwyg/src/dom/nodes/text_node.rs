@@ -270,11 +270,11 @@ where
         let mut description = S::from("\"");
         description.push(self.data.clone());
         description.push('"');
-        return self.tree_line(
+        self.tree_line(
             description,
             self.handle.raw().len(),
             continuous_positions,
-        );
+        )
     }
 }
 
