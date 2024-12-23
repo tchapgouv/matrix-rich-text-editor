@@ -3,6 +3,8 @@
 # [Unreleased]
 - [Rust] Bump Rust version to `1.76`.
 - [Web] Bump wasm-pack version to `0.13.1`.
+- [Web] Switch bindings/wysiwyg-wasm from npm to yarn.
+- [Web] Add typescript checking to bindings/wysiwyg-wasm.
 - [Web] Update vite and related packages.
 - [Web] Simplify build scripts.
 
