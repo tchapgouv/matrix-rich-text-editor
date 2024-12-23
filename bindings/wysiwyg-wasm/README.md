@@ -11,9 +11,9 @@ WASM/JavaScript bindings for wysiwyg-rust.
 
 ```sh
 cd bindings/wysiwyg-wasm
-npm install
-npm run build
-#npm run test (no tests yet)
+yarn
+yarn build
+#yarn test (no tests yet)
 ```
 
 This will generate:
@@ -46,8 +46,8 @@ run();
 ## Profiling
 
 To generate a debugging/profiling Wasm module, use the following command
-instead of `npm run build`:
+instead of `yarn build`:
 
 ```sh
-$ npm run dev-build
+$ yarn dev-build
 ```

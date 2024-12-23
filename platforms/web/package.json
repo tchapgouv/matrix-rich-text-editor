@@ -37,7 +37,7 @@
         "test:watch": "vitest --pool=forks",
         "test:ui": "vitest --ui",
         "coverage": "vitest run --coverage --pool=forks",
-        "update": "cd ../../bindings/wysiwyg-wasm && npm run build && cd ../../platforms/web && yarn build"
+        "update": "cd ../../bindings/wysiwyg-wasm && yarn build && cd ../../platforms/web && yarn build"
     },
     "peerDependencies": {
         "react": "^18.2.0"
