@@ -3,6 +3,8 @@
 # [Unreleased]
 - [Rust] Bump Rust version to `1.76`.
 - [Web] Bump wasm-pack version to `0.13.1`.
+- [Web] Switch bindings/wysiwyg-wasm from npm to yarn.
+- [Web] Add typescript checking to bindings/wysiwyg-wasm.
 
 # [2.37.14]
 - [Android] Have separate modes for parsing HTML for 'editor mode' and 'message mode' using `isEditor: Boolean` parameter.
