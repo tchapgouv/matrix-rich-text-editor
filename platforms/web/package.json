@@ -26,7 +26,7 @@
     "types": "./dist/index.d.ts",
     "scripts": {
         "dev": "vite",
-        "build": "vite build && node scripts/hack_myfetch.js && node scripts/hack_exports.js",
+        "build": "vite build && node scripts/hack_myfetch.js",
         "build:demo": "vite build -c vite.demo.config.ts",
         "preview": "vite preview",
         "typecheck": "tsc --noEmit",
@@ -53,8 +53,7 @@
         "@typescript-eslint/eslint-plugin": "^5.35.1",
         "@typescript-eslint/parser": "^5.6.0",
         "@vitejs/plugin-react": "^4.2.1",
-        "@vitest/coverage-c8": "^0.33.0",
-        "@vitest/coverage-v8": "^1.6.0",
+        "@vitest/coverage-v8": "^2.1.8",
         "@vitest/ui": "^0.34.0",
         "cypress": "^10.9.0",
         "eslint": "^8.23.1",
@@ -67,18 +66,16 @@
         "eslint-plugin-prettier": "^4.2.1",
         "eslint-plugin-react": "^7.31.8",
         "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-unicorn": "^54.0.0",
         "jest-environment-jsdom": "^29.0.3",
         "prettier": "2.8.8",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "replace": "^1.2.1",
         "typescript": "^4.7.4",
-        "vite": "^3.1.0",
-        "vite-plugin-dts": "^1.5.0",
-        "vitest": "^1.6.0",
+        "vite": "5.3.3",
+        "vite-plugin-dts": "^4.3.0",
+        "vitest": "^2.1.8",
         "vitest-sonar-reporter": "^0.5.0"
-    },
-    "dependencies": {
-        "eslint-plugin-unicorn": "^54.0.0"
     }
 }
