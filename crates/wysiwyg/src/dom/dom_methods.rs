@@ -1121,13 +1121,11 @@ where
 }
 
 fn first_shrinkable_link_node_handle(range: &Range) -> Option<&DomLocation> {
-    let Some(link_loc) = range.locations.iter().find(|loc| {
+    let link_loc = range.locations.iter().find(|loc| {
         loc.kind == DomNodeKind::Link
             && !loc.is_covered()
             && (loc.is_start() || loc.leading_is_end())
-    }) else {
-        return None;
-    };
+    })?;
     Some(link_loc)
 }
 

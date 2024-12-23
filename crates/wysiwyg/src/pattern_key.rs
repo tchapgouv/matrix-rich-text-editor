@@ -26,9 +26,7 @@ impl PatternKey {
         if custom_suggestion_patterns.contains(&string) {
             return Some(Self::Custom(string));
         }
-        let Some(first_char) = string.chars().nth(0) else {
-            return None;
-        };
+        let first_char = string.chars().nth(0)?;
         match first_char {
             '\u{0040}' => Some(Self::At),
             '\u{0023}' => Some(Self::Hash),

@@ -63,6 +63,7 @@ pub trait UnicodeStr:
     /// Returns the length of the char in indices of the current encoding
     fn char_len(&self, char: &char) -> usize;
 
+    #[allow(dead_code)]
     fn char_at(&self, idx: usize) -> char;
 }
 

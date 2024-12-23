@@ -368,7 +368,7 @@ impl Range {
     /// range.
     ///
     /// * `allow_covered_nodes` - if true, the node may be covered by the  
-    /// selection (i.e. matches the selection).
+    ///   selection (i.e. matches the selection).
     ///     
     fn find_shared_parent(&self, allow_covered_nodes: bool) -> DomHandle {
         let mut shared_path = vec![];
@@ -619,7 +619,7 @@ mod test {
     #[test]
     fn node_on_border_is_before_or_after_cursor() {
         let range = range_of("<strong>abc</strong>|def");
-        let strong_loc = range.locations.get(0).unwrap();
+        let strong_loc = range.locations.first().unwrap();
         assert!(strong_loc.relative_position() == DomLocationPosition::Before);
         let def_loc = range.locations.get(2).unwrap();
         assert!(def_loc.relative_position() == DomLocationPosition::After);

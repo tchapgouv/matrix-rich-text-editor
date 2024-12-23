@@ -170,6 +170,18 @@ where
     }
 }
 
+pub(crate) struct WrapSearchResult {
+    pub(crate) ancestor_handle: DomHandle,
+    pub(crate) start_handle: DomHandle,
+    pub(crate) end_handle: DomHandle,
+    pub(crate) range: Range,
+}
+
+struct HandleWithKind {
+    handle: DomHandle,
+    kind: DomNodeKind,
+}
+
 #[cfg(test)]
 mod test {
     use crate::tests::testutils_composer_model::{cm, restore_whitespace};
@@ -266,16 +278,4 @@ mod test {
         assert_eq!(ret.start_handle, DomHandle::from_raw(vec![0, 0]));
         assert_eq!(ret.end_handle, DomHandle::from_raw(vec![1, 1, 0]));
     }
-}
-
-pub(crate) struct WrapSearchResult {
-    pub(crate) ancestor_handle: DomHandle,
-    pub(crate) start_handle: DomHandle,
-    pub(crate) end_handle: DomHandle,
-    pub(crate) range: Range,
-}
-
-struct HandleWithKind {
-    handle: DomHandle,
-    kind: DomNodeKind,
 }

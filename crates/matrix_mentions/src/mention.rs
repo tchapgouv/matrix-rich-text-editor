@@ -191,7 +191,6 @@ fn parse_matrix_id(uri: &str) -> Option<MatrixId> {
 /// ruma.
 ///
 /// Returns the result of calling `parse` in ruma.
-
 #[cfg(any(test, feature = "custom-matrix-urls"))]
 fn parse_external_id(uri: &str) -> Result<MatrixToUri, IdParseError> {
     // first split the string into the parts we need

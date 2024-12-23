@@ -300,7 +300,7 @@ where
         &mut self,
         position: usize,
     ) -> Vec<DomNode<S>> {
-        return self.children.drain(position..self.children.len()).collect();
+        self.children.drain(position..self.children.len()).collect()
     }
 
     pub fn kind(&self) -> &ContainerNodeKind<S> {
