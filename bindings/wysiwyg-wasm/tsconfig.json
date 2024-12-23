@@ -1,0 +1,15 @@
+{
+  "extends": "../../platforms/web/tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "types": ["node"],
+    "strict": false,
+    "noImplicitAny": false,
+    "strictPropertyInitialization": false,
+    "strictNullChecks": false,
+    "noUnusedLocals": false,
+    "noImplicitThis": false,
+  },
+  "include": ["pkg"]
+}
