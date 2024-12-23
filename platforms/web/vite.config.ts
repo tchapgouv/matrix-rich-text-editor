@@ -63,7 +63,6 @@ export default defineConfig({
         },
     },
     build: {
-        minify: false, // TODO remove
         lib: {
             entry: resolve(__dirname, 'lib/useWysiwyg.ts'),
             name: 'Matrix wysiwyg',
