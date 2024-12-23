@@ -18,6 +18,7 @@ export default defineConfig({
         dts({
             include: [
                 'lib/useWysiwyg.ts',
+                'lib/useComposerModel.ts',
                 'lib/conversion.ts',
                 'lib/types.ts',
                 'lib/constants.ts',

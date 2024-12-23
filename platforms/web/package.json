@@ -12,10 +12,10 @@
     "exports": {
         ".": {
             "import": "./dist/matrix-wysiwyg.js",
-            "require": "./dist/matrix-wysiwyg.umd.cjs",
-            "types": "./dist/index.d.ts"
+            "require": "./dist/matrix-wysiwyg.umd.cjs"
         }
     },
+    "types": "./dist/index.d.ts",
     "files": [
         "CHANGELOG.md",
         "README.md",

@@ -4,7 +4,6 @@
     "allowJs": true,
     "checkJs": true,
     "types": ["node"],
-    "strict": false,
     "noImplicitAny": false,
     "strictPropertyInitialization": false,
     "strictNullChecks": false,
