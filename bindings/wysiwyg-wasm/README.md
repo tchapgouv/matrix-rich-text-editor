@@ -26,16 +26,24 @@ pkg/matrix_sdk_wysiwyg.js
 ... plus other files
 ```
 
-These files should be copied into a web project and imported with code like:
+You can then consume these files in your project by linking the package in your package.json:
+
+```json
+{
+  "dependencies": {
+    "@matrix-org/matrix-sdk-wysiwyg-wasm": "link:../../bindings/wysiwyg-wasm"
+  }
+}
+```
+
+And consume with code like this:
 
 ```html
 <script type="module">
-  TODO this is all wrong
-import { initAsync, some_method_from_rust }
-    from './pkg/matrix_sdk_wysiwyg.js';
+import { initAsync, some_method_from_rust } from '@matrix-org/matrix-sdk-wysiwyg-wasm';
 
 async function run() {
-    await init();
+    await initAsync();
     some_method_from_rust();
 }
 
