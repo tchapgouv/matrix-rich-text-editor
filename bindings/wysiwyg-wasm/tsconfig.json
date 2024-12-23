@@ -11,5 +11,5 @@
     "noUnusedLocals": false,
     "noImplicitThis": false,
   },
-  "include": ["pkg"]
+  "include": ["pkg/wysiwyg.d.ts", "pkg/wysiwyg_bg.wasm.d.ts"]
 }
