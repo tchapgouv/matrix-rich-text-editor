@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@vector-im/matrix-wysiwyg": "^2.37.13",
+    "@vector-im/matrix-wysiwyg": "2.37.13",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -18,6 +18,6 @@
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^4.0.0",
     "typescript": "^5.0.0",
-    "vite": "^3.1.0"
+    "vite": "5.3.6"
   }
 }
