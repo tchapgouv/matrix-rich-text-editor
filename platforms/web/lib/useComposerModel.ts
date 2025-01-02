@@ -84,7 +84,7 @@ export function useComposerModel(
                             modelContent.length,
                         );
                     }
-                } catch (e) {
+                } catch {
                     // if the initialisation fails, due to a parsing failure of the html, fallback to an empty composer
                     contentModel = new_composer_model();
                 }
