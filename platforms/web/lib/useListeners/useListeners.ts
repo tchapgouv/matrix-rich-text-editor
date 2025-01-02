@@ -114,7 +114,7 @@ export function useListeners(
                     plainTextContentRef.current =
                         composerModel.get_content_as_plain_text();
                 }
-            } catch (e) {
+            } catch {
                 onError(plainTextContentRef.current);
             }
         };
@@ -188,7 +188,7 @@ export function useListeners(
                 }
                 plainTextContentRef.current =
                     composerModel.get_content_as_plain_text();
-            } catch (e) {
+            } catch {
                 onError(plainTextContentRef.current);
             }
         };
@@ -216,7 +216,7 @@ export function useListeners(
 
         setAreListenersReady(true);
 
-        return () => {
+        return (): void => {
             setAreListenersReady(false);
             editorNode.removeEventListener('input', onInput);
             editorNode.removeEventListener('paste', onPaste);
