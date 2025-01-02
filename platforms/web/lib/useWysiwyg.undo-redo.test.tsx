@@ -6,7 +6,13 @@ SPDX-License-Identifier: AGPL-3.0-only
 Please see LICENSE in the repository root for full details.
 */
 
-import { fireEvent, render, screen, waitFor, act } from '@testing-library/react';
+import {
+    fireEvent,
+    render,
+    screen,
+    waitFor,
+    act,
+} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import { Editor } from './testUtils/Editor';
