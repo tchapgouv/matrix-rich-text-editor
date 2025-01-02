@@ -56,14 +56,14 @@ export type WysiwygProps = {
 };
 
 export type UseWysiwyg = {
-    ref: React.MutableRefObject<HTMLDivElement | null>;
+    ref: RefObject<HTMLDivElement | null>;
     isWysiwygReady: boolean;
     wysiwyg: FormattingFunctions;
     content: string | null;
     actionStates: AllActionStates;
     debug: {
-        modelRef: RefObject<HTMLDivElement>;
-        testRef: RefObject<HTMLDivElement>;
+        modelRef: RefObject<HTMLDivElement | null>;
+        testRef: RefObject<HTMLDivElement | null>;
         resetTestCase: () => void | null;
         traceAction: TraceAction;
     };

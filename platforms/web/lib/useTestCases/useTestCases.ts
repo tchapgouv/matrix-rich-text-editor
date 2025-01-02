@@ -18,7 +18,7 @@ import {
 import { TraceAction } from '../types';
 
 export type UseTestCases = {
-    testRef: RefObject<HTMLDivElement>;
+    testRef: RefObject<HTMLDivElement | null>;
     utilities: {
         traceAction: TraceAction;
         getSelectionAccordingToActions: () => [number, number];

@@ -51,7 +51,7 @@ export function useListeners(
         suggestion: null,
     });
 
-    const plainTextContentRef = useRef<string>();
+    const plainTextContentRef = useRef<string>(undefined);
 
     const [areListenersReady, setAreListenersReady] = useState(false);
 
