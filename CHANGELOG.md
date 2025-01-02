@@ -1,6 +1,6 @@
 # Changelog
 
-# [Unreleased]
+# [2.38.0]
 - [Rust] Bump Rust version to `1.76`.
 - [Web] Bump wasm-pack version to `0.13.1`.
 - [Web] Switch bindings/wysiwyg-wasm from npm to yarn.
