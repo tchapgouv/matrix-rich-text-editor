@@ -22,6 +22,7 @@ import android.text.TextWatcher
 import android.util.AttributeSet
 import android.view.KeyEvent
 import android.view.MotionEvent
+import android.view.View
 import android.view.inputmethod.BaseInputConnection
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputConnection
@@ -614,6 +615,11 @@ class EditorEditText : AppCompatEditText {
 
     override fun removeTextChangedListener(watcher: TextWatcher) {
         textWatcher.removeChild(watcher)
+    }
+
+    // This workaround is needed around compose to prevent the EditText focus from causing ANRs
+    override fun focusSearch(direction: Int): View? {
+        return null
     }
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
