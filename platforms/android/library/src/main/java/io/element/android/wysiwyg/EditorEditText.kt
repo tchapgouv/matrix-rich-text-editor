@@ -616,6 +616,14 @@ class EditorEditText : AppCompatEditText {
         textWatcher.removeChild(watcher)
     }
 
+    override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
+        // The size changed, so the cached positions for the code renderers won't match anymore
+        inlineCodeBgHelper.clearCachedPositions()
+        codeBlockBgHelper.clearCachedPositions()
+
+        super.onSizeChanged(w, h, oldw, oldh)
+    }
+
     /**
      * Force redisplay the current editor model.
      *

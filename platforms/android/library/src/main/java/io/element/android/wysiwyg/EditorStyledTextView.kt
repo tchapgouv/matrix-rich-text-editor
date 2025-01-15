@@ -160,6 +160,16 @@ open class EditorStyledTextView : AppCompatTextView {
         codeBlockBgHelper.clearCachedPositions()
     }
 
+    override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
+        if (isInit) {
+            // The size changed, so the cached positions for the code renderers won't match anymore
+            inlineCodeBgHelper.clearCachedPositions()
+            codeBlockBgHelper.clearCachedPositions()
+        }
+
+        super.onSizeChanged(w, h, oldw, oldh)
+    }
+
     /**
      * Sets up the styling used to translate HTML to Spanned text.
      * @param styleConfig The styles to use for the generated spans.

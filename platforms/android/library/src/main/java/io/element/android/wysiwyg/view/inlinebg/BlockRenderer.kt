@@ -33,8 +33,10 @@ internal class BlockRenderer(
         text: Spanned,
         spanType: Class<*>,
     ) {
-        val top = layout.getLineTop(startLine)
-        val bottom = layout.getLineBottom(endLine)
+        val actualStartLine = startLine.coerceIn(0, layout.lineCount - 1)
+        val actualEndLine = endLine.coerceIn(0, layout.lineCount - 1)
+        val top = layout.getLineTop(actualStartLine)
+        val bottom = layout.getLineBottom(actualEndLine)
         drawable.setBounds(
             if (leadingMargin > 0) leadingMargin - horizontalPadding else horizontalPadding,
             top + verticalPadding,
